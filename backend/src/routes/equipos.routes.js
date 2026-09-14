@@ -15,6 +15,6 @@ router.post('/', authorize('admin', 'cliente'), uploadEquipoImagen, controller.c
 router.put('/:id', authorize('admin', 'cliente'), uploadEquipoImagen, controller.update);
 
 // solo admin puede eliminar
-router.delete('/:id', authorize('admin'), controller.delete);
+router.delete('/:id', authorize('admin'), controller.remove);
 
 module.exports = router;

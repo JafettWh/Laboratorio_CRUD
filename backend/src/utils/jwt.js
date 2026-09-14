@@ -9,8 +9,8 @@ function createToken(user) {
         email: user.email,
         rol: user.rol 
         },
-        env.jwtSecret,
-        { expiresIn: env.jwtexpiresIn }
+        env.jwt.secret,
+        { expiresIn: env.jwt.expiresIn }
     );
 }
 
